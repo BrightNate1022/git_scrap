@@ -16,6 +16,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/node": "^7.17.10",
     "concurrently": "^4.1.0",
     "nodemon": "^1.18.7"
   },

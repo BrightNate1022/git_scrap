@@ -1,12 +1,12 @@
   
 // import { response } from "express" ;
+// import Commit from "commitSC.js"
+// import Pushed from "PushedATS.js"
 
- function scraper () {
-     fetch ("https://api.github.com/repos/BrightNate1022/git_scrap/commits")
-    .then (response => response.json())
-    // .then (console.log (response))
-    .then (data => console.log (data));
-}
+// export default Commit;
+// export default Pushed;
 
-export default scraper 
+
+
+
 //  const data = {};

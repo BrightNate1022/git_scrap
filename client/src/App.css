@@ -1,24 +1,76 @@
 .App {
   text-align: center;
+  background-image: url("./Assets/bg.png");
+  background-color:#D2C1CE ;
+}
+
+html {
+  
+  background-image: url("./Assets/bg.png");
+  background-color: #D2C1CE ;
+  /* height: 100%; */
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: #d7d192;
+  height: 250px;
   padding: 20px;
   color: white;
+  animation: bg-change infinite 4s linear alternate
 }
 
 .App-intro {
   font-size: large;
+
+
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes bg-change {
+  from { background-color: #d7d192;}
+  to { background-color: #AA98A9; }
+}
+
+.CardsA {
+  /* display: none; */
+  
+  animation-name: cardanimation;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+  animation-timing-function: linear;
+  
+}
+
+
+
+@keyframes cardanimation {
+   from {opacity: 0%;}
+  to {opacity: 100%;}
+  from {margin-left: -500px;}
+  to {margin-left: auto;}
+ 
+  /* from {display: none;} */
+  /* to {display: flex;} */
+}  
+.Card.body {
+  font-size: 3rem;
+}
+
+.Prop {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #83a909;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: black;
+  box-shadow: 2px;
 }

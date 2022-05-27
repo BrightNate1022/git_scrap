@@ -1,21 +1,28 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import ProP from "./Assets/ProfessionalPic.jpg";
+// import bg from "./Assets/bg.png"
 import "./App.css";
-import scraper from "./helpers/scraper";
+// import scraper from "./helpers/scraper"; 
+import Commit from "./componets/CommitSc";
+import { pushedAt } from "./helpers/PushedAtS";
+// const commitsh = commits
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div className="App-header mb-5">
+          <img src={ProP} className="Prop" alt="logo" />
+          <h2 className="my-3">Welcome to React My Git Commits page for this Project !</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+
+        <Commit />
       </div>
+      
     );
   }
 }
-scraper ();
+
+
+// console.log(commit)
+pushedAt ()
 export default App;
