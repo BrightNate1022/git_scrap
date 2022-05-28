@@ -5,7 +5,7 @@ export function pushedAt () {
     .then (response => response.json())
     // .then (response => console.log (response))
     .then ( data =>console.log(data))  
-    
+    // console.log(data.length)
     // .then (data => console.log(data.commits_url))
     
     // console.log(PushedScraper)

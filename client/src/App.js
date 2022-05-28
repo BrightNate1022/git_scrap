@@ -12,7 +12,8 @@ class App extends Component {
       <div className="App">
         <div className="App-header mb-5">
           <img src={ProP} className="Prop" alt="logo" />
-          <h2 className="my-3">Welcome to React My Git Commits page for this Project !</h2>
+          <h2 className="d-none d-lg-block my-3">Welcome to my Git Commits page for this Project !</h2>
+          <h5 className="d-lg-none my-3">Welcome to my Git Commits page for this Project !</h5>
         </div>
 
         <Commit />
